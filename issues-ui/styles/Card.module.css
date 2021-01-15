@@ -1,0 +1,115 @@
+.card {
+  width: 100%;
+  min-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 1100px) {
+  .card {
+    width: 48.5%;
+  }
+}
+@media (max-width: 650px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.header {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.status {
+  color: gray;
+  font-size: 14px;
+}
+.trash {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.trash:hover {
+  background-color: rgb(242, 60, 78, 0.25);
+}
+.trash:active {
+  background-color: rgb(242, 60, 78, 0.5);
+}
+.icon {
+  height: 1.5rem;
+  cursor: pointer;
+}
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.title:hover {
+  color: #3483fa;
+}
+.description {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.feature {
+  margin-bottom: 5px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  background-color: rgb(7, 166, 80);
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.bug {
+  margin-bottom: 5px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  background-color: rgb(242, 60, 78);
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.image {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.vote {
+  border-top: whitesmoke 1px solid;
+  padding-top: 5px;
+  width: 100%;
+}
+.vote button {
+  outline: none;
+  border: none;
+  height: 30px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #3483fa;
+  color: white;
+}
+.vote button:hover {
+  background-color: #255fb6;
+}
+.vote button:active {
+  background-color: #193f79;
+}
+.vote button:disabled {
+  background-color: rgb(170, 170, 170);
+  color: rgb(210, 210, 210);
+}

@@ -1,0 +1,25 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main {
+  margin-top: 60px;
+  padding: 20px;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rgba(231, 231, 231);
+}
+@media (max-width: 1100px) {
+  .main {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}

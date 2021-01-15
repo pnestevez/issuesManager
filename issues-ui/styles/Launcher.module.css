@@ -1,0 +1,84 @@
+.launcher {
+  width: 24.5%;
+  min-width: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 2px;
+}
+@media (max-width: 1100px) {
+  .launcher {
+    width: 100%;
+  }
+}
+.title {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.title span {
+  font-weight: 500;
+}
+.tools {
+  padding-top: 20px;
+  border-top: 1px #3483fa solid;
+}
+.toolsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.toolsContainer div {
+  margin: 0;
+  width: 74%;
+}
+.toolsContainer div input {
+  height: 45px;
+}
+.toolsContainer button {
+  width: 24%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  outline: none;
+  border: 1px solid #3483fa;
+  border-radius: 2px;
+}
+.toolsContainer button img {
+  height: 1.5rem;
+}
+.toolsContainer button:hover {
+  background-color: rgb(210, 210, 210);
+}
+.toolsContainer button:active {
+  background-color: rgb(170, 170, 170);
+}
+
+.notLoggedIn {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(130, 130, 130);
+  cursor: pointer;
+}
+.notLoggedIn img {
+  height: 2rem;
+  margin-bottom: 20px;
+}
+.notLoggedIn h4 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 300;
+}
+.notLoggedIn h5 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 200;
+}
+.notLoggedIn h5 span {
+  font-weight: 500;
+}
