@@ -6,14 +6,27 @@ En este desarrollo utilicé estrategias de server side rendering y stale-while-r
 
 El repositorio issuesManager contiene los directorios /issues-core e /issues-ui, que alojan respectivamente la API y la user interface. Para su puesta en marcha deberá correr los siguientes comandos en su consola:
 
-    0. 'brew install sqlite3', o bien mediante https://www.sqlite.org/download.html, en caso de que no cuente con Homebrew.
-    1. ‘git clone https://github.com/pnestevez/issuesManager.git'
-    en /issuesManager/issues-core
-    2.1. ‘npm install’
-    2.2. 'npm start'
-    en /issuesManager/issues-ui
-    3.1 ‘npm install’
-    3.2. 'npm start'
+0.Instalar SQLite (o bien, mediante https://www.sqlite.org/download.html, en caso de que no cuente con Homebrew)
+
+    % brew install sqlite3 
+
+1.Clonar el repositorio
+
+    % git clone https://github.com/pnestevez/issuesManager.git
+
+2.Instalar las dependencias
+
+en /issuesManager/issues-core
+
+    % npm install
+    % npm start
+    
+en /issuesManager/issues-ui
+
+    % npm install
+    % npm start
 
 La UI corre en el puerto 3000, en tanto que la API lo hace en el 4000.
 Utilicé ESLint para darle estilo al código, con el formato de Airbnb.
+
+Nota: en caso de que el proyecto sea consumido masivamente, considero que sería adecuado paginar el servicio de issues de la API. Por otro lado, sería prudente ampliar la cobertura de tests. Estos se encuentran disponibles en /issuesManager/issues-core/test y pueden ser ejecutados con el comando ‘npm run test’, en el directorio /issuesManager/issues-core.
